@@ -1,0 +1,19 @@
+apply plugin:'war'
+
+repositories {
+      maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+}
+
+dependencies {
+   
+	//配置本地文件夹依赖
+//	compile fileTree(dir:"C:\\Users\\Administrator\\Desktop\\jar", include:"*.jar")
+	
+	testCompile 'junit:junit:4.11'
+}
+
+// 拷贝配置文件jar包
+/*task copyJar(type: Copy) {
+	from configurations.compile.asFileTree
+	into "C:\\Users\\Administrator\\Desktop"
+} */ 
